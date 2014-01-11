@@ -12,7 +12,7 @@ Official releases of this add-on are available at Vaadin Directory. For Maven in
 
 ## Building and running demo
 
-git clone <git@github.com:Dr4K4n/joda-time-fields.git>
+git clone git@github.com:Dr4K4n/joda-time-fields.git
 
 mvn clean install
 
@@ -20,7 +20,7 @@ cd demo
 
 mvn jetty:run
 
-To see the demo, navigate to <http://localhost:8080/>
+To see the demo, navigate to http://localhost:8080/
 
 ## Development with Eclipse IDE
 
@@ -69,7 +69,7 @@ Contributions are welcome, but there are no guarantees that they are accepted as
 
 Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
 
-DateTimeField is written by Stefan Erichsen <https://github.com/Dr4K4n>
+DateTimeField is written by [Stefan Erichsen](https://github.com/Dr4K4n)
 
 # Developer Guide
 
@@ -77,11 +77,13 @@ DateTimeField is written by Stefan Erichsen <https://github.com/Dr4K4n>
 
 Here is a simple example on how to try out the add-on component:
 
+```java
 DemoBean bean = new DemoBean();
 BeanFieldGroup<DemoBean> fieldGroup = new BeanFieldGroup<DemoBean>(DemoBean.class);
 fieldGroup.setItemDataSource(bean);
 addComponent(fieldGroup.buildAndBind("date"));
+```
 
-For a more comprehensive example, see joda-time-fields-demo/src/main/java/com/prodyna/demo/DemoUI.java
+For a more comprehensive example, see [joda-time-fields-demo/src/main/java/com/prodyna/demo/DemoUI.java](../blob/master/joda-time-fields-demo/src/main/java/com/prodyna/demo/DemoUI.java)
 
 
