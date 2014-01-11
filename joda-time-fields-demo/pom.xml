@@ -2,10 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.prodyna</groupId>
 	<artifactId>joda-time-fields-demo</artifactId>
 	<packaging>war</packaging>
-	<version>1.0.0</version>
 	<name>DateTimeField Add-on Demo</name>
 
 	<properties>
@@ -227,4 +225,9 @@
 
 	</build>
 
+	<parent>
+		<groupId>com.prodyna</groupId>
+		<artifactId>joda-time-fields-root</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
 </project>

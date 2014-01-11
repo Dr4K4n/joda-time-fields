@@ -1,6 +1,6 @@
-# DateTimeField Add-on for Vaadin 7
+# joda-time-fields Add-on for Vaadin 7
 
-DateTimeField is an UI component add-on for Vaadin 7.
+joda-time-fields is a UI component add-on for Vaadin 7. At the moment it adds Field-Components for DateTime, LocalTime and Interval.
 
 ## Online demo
 
@@ -12,9 +12,12 @@ Official releases of this add-on are available at Vaadin Directory. For Maven in
 
 ## Building and running demo
 
-git clone <url of the DateTimeField repository>
+git clone git@github.com:Dr4K4n/joda-time-fields.git
+
 mvn clean install
+
 cd demo
+
 mvn jetty:run
 
 To see the demo, navigate to http://localhost:8080/
@@ -48,19 +51,6 @@ The most common way of debugging and making changes to the client-side code is d
 
 Another way of debugging client-side is superdev mode. To enable it, uncomment devModeRedirectEnabled line from the end of DemoWidgetSet.gwt.xml located under joda-time-fields-demo resources folder and compile the widgetset once by running vaadin:compile Maven target for joda-time-fields-demo. Refresh joda-time-fields-demo project resources by right clicking the project and choosing Refresh. Click "Create SuperDevMode Launch" button on the Vaadin tab of the joda-time-fields-demo project properties panel to create superder mode code server launch configuration and modify the class path as instructed above. After starting the code server by running SuperDevMode launch as Java application, you can navigate to http://localhost:8080/joda-time-fields-demo/?superdevmode. Now all code changes you do to your client side will get compiled as soon as you reload the web page. You can also access Java-sources and set breakpoints inside Chrome if you enable source maps from inspector settings. 
 
- 
-## Release notes
-
-### Version 1.0.0
-- ...
-- ...
-
-## Roadmap
-
-This component is developed as a hobby with no public roadmap or any guarantees of upcoming releases. That said, the following features are planned for upcoming releases:
-- ...
-- ...
-
 ## Issue tracking
 
 The issues for this add-on are tracked on its github.com page. All bug reports and feature requests are appreciated. 
@@ -79,7 +69,7 @@ Contributions are welcome, but there are no guarantees that they are accepted as
 
 Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
 
-DateTimeField is written by <...>
+DateTimeField is written by Stefan Erichsen <https://github.com/Dr4K4n>
 
 # Developer Guide
 
@@ -87,24 +77,11 @@ DateTimeField is written by <...>
 
 Here is a simple example on how to try out the add-on component:
 
-<...>
+    	DemoBean bean = new DemoBean();
+    	BeanFieldGroup<DemoBean> fieldGroup = new BeanFieldGroup<DemoBean>(DemoBean.class);
+    	fieldGroup.setItemDataSource(bean);
+	addComponent(fieldGroup.buildAndBind("date"));
 
 For a more comprehensive example, see src/test/java/org/vaadin/template/demo/DemoUI.java
 
-## Features
 
-### Feature A
-
-<...>
-
-### Feature B
-
-<...>
-
-### Feature C
-
-<...>
-
-## API
-
-DateTimeField JavaDoc is available online at <...>
