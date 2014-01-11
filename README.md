@@ -4,7 +4,7 @@ joda-time-fields is a UI component add-on for Vaadin 7. At the moment it adds Fi
 
 ## Online demo
 
-Try the add-on demo at <url of the online demo>
+Try the add-on demo at <http://dr4k4n.de/joda-time-fields-demo>
 
 ## Download release
 
@@ -12,7 +12,7 @@ Official releases of this add-on are available at Vaadin Directory. For Maven in
 
 ## Building and running demo
 
-git clone git@github.com:Dr4K4n/joda-time-fields.git
+git clone <git@github.com:Dr4K4n/joda-time-fields.git>
 
 mvn clean install
 
@@ -20,7 +20,7 @@ cd demo
 
 mvn jetty:run
 
-To see the demo, navigate to http://localhost:8080/
+To see the demo, navigate to <http://localhost:8080/>
 
 ## Development with Eclipse IDE
 
@@ -77,11 +77,11 @@ DateTimeField is written by Stefan Erichsen <https://github.com/Dr4K4n>
 
 Here is a simple example on how to try out the add-on component:
 
-    	DemoBean bean = new DemoBean();
-    	BeanFieldGroup<DemoBean> fieldGroup = new BeanFieldGroup<DemoBean>(DemoBean.class);
-    	fieldGroup.setItemDataSource(bean);
-	addComponent(fieldGroup.buildAndBind("date"));
+DemoBean bean = new DemoBean();
+BeanFieldGroup<DemoBean> fieldGroup = new BeanFieldGroup<DemoBean>(DemoBean.class);
+fieldGroup.setItemDataSource(bean);
+addComponent(fieldGroup.buildAndBind("date"));
 
-For a more comprehensive example, see src/test/java/org/vaadin/template/demo/DemoUI.java
+For a more comprehensive example, see joda-time-fields-demo/src/main/java/com/prodyna/demo/DemoUI.java
 
 
