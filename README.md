@@ -12,13 +12,12 @@ Official releases of this add-on are available at Vaadin Directory. For Maven in
 
 ## Building and running demo
 
+```bash
 git clone git@github.com:Dr4K4n/joda-time-fields.git
-
 mvn clean install
-
 cd demo
-
 mvn jetty:run
+```
 
 To see the demo, navigate to http://localhost:8080/
 
