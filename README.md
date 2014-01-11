@@ -19,7 +19,7 @@ cd demo
 mvn jetty:run
 ```
 
-To see the demo, navigate to http://localhost:8080/
+To see the demo, navigate to <http://localhost:8080/>
 
 ## Development with Eclipse IDE
 
