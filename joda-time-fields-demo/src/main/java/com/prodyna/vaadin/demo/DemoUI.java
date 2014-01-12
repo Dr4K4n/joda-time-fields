@@ -9,6 +9,7 @@ import com.prodyna.vaadin.jodatimefields.LocalTimeField;
 import com.vaadin.annotations.Title;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.data.fieldgroup.FieldGroup;
+import com.vaadin.data.fieldgroup.FieldGroup.CommitException;
 import com.vaadin.data.util.BeanItem;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
@@ -37,7 +38,7 @@ public class DemoUI extends UI {
         final JodaTimeTestBean demoBean = new JodaTimeTestBean();
         BeanItem<JodaTimeTestBean> demoBeanItem = new BeanItem<JodaTimeTestBean>(demoBean);
 
-        FieldGroup fieldGroup = new FieldGroup(demoBeanItem);
+        final FieldGroup fieldGroup = new FieldGroup(demoBeanItem);
 
         // We need to set the FieldFactory so that Joda-Time classes are recognized
         fieldGroup.setFieldFactory(new DefaultFieldGroupJodaTimeFieldFactory());
@@ -46,10 +47,6 @@ public class DemoUI extends UI {
         final DateTimeField dateTimeField = (DateTimeField) fieldGroup.buildAndBind("dateTime");
         final IntervalField intervalField = (IntervalField) fieldGroup.buildAndBind("interval");
         final LocalTimeField localTimeField = (LocalTimeField) fieldGroup.buildAndBind("localTime");
-
-        dateTimeField.setImmediate(true);
-        intervalField.setImmediate(true);
-        localTimeField.setImmediate(true);
 
         // Show it in the middle of the screen
         final VerticalLayout layout = new VerticalLayout();
@@ -61,6 +58,11 @@ public class DemoUI extends UI {
         layout.addComponent(new Button("Show values", new ClickListener() {
             @Override
             public void buttonClick(ClickEvent event) {
+                try {
+                    fieldGroup.commit();
+                } catch (CommitException e) {
+                    e.printStackTrace();
+                }
                 StringBuilder valueString = new StringBuilder();
 
                 valueString.append("dateTime: ").append(demoBean.getDateTime().toString()).append("\n");
