@@ -5,7 +5,7 @@
 	<groupId>com.prodyna.vaadin</groupId>
 	<artifactId>joda-time-fields-demo</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>joda-time-fields Add-on Demo</name>
 
 	<properties>
