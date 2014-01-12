@@ -2,13 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.prodyna.vaadin</groupId>
 	<artifactId>joda-time-fields-demo</artifactId>
 	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>DateTimeField Add-on Demo</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<vaadin.version>7.1.0</vaadin.version>
+		<vaadin.version>7.1.9</vaadin.version>
 		<vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
 	</properties>
 
@@ -71,7 +73,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.prodyna</groupId>
+			<groupId>com.prodyna.vaadin</groupId>
 			<artifactId>joda-time-fields</artifactId>
 			<version>${version}</version>
 		</dependency>
@@ -210,6 +212,8 @@
 											<goal>resources</goal>
 											<goal>update-widgetset</goal>
 											<goal>compile</goal>
+											<goal>update-theme</goal>
+											<goal>compile-theme</goal>
 										</goals>
 									</pluginExecutionFilter>
 									<action>
@@ -225,9 +229,4 @@
 
 	</build>
 
-	<parent>
-		<groupId>com.prodyna</groupId>
-		<artifactId>joda-time-fields-root</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
 </project>

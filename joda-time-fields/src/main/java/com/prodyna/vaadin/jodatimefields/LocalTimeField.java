@@ -1,4 +1,4 @@
-package com.prodyna;
+package com.prodyna.vaadin.jodatimefields;
 
 import java.util.Locale;
 

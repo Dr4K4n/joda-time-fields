@@ -1,4 +1,4 @@
-package com.prodyna;
+package com.prodyna.vaadin;
 
 import junit.framework.Assert;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package com.prodyna;
+package com.prodyna.vaadin.jodatimefields;
 
 import org.joda.time.Interval;
 
