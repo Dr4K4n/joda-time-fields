@@ -4,7 +4,7 @@ joda-time-fields is a UI component add-on for Vaadin 7. At the moment it adds Fi
 
 ## Online demo
 
-Try the add-on demo at <http://dr4k4n.de/joda-time-fields-demo>
+Try the add-on demo at <http://dr4k4n.de:8180/joda-time-fields-demo/>
 
 ## Download release
 
