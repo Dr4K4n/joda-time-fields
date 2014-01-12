@@ -4,7 +4,7 @@
 	<groupId>com.prodyna.vaadin</groupId>
 	<artifactId>joda-time-fields</artifactId>
 	<packaging>jar</packaging>
-	<version>0.0.2</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>joda-time-fields Add-on</name>
 
 	<properties>
