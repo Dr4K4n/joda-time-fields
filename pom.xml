@@ -6,7 +6,7 @@
 	<artifactId>joda-time-fields-root</artifactId>
 	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>DateTimeField Add-on Root Project</name>
+	<name>joda-time-fields Add-on Root Project</name>
 
 	<modules>
 		<module>joda-time-fields</module>

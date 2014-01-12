@@ -77,10 +77,11 @@ DateTimeField is written by [Stefan Erichsen](https://github.com/Dr4K4n)
 Here is a simple example on how to try out the add-on component:
 
 ```java
-DemoBean bean = new DemoBean();
-BeanFieldGroup<DemoBean> fieldGroup = new BeanFieldGroup<DemoBean>(DemoBean.class);
-fieldGroup.setItemDataSource(bean);
-addComponent(fieldGroup.buildAndBind("date"));
+final JodaTimeDemoBean demoBean = new JodaTimeDemoBean();
+BeanItem<JodaTimeDemoBean> demoBeanItem = new BeanItem<JodaTimeDemoBean>(demoBean);
+final FieldGroup fieldGroup = new FieldGroup(demoBeanItem);
+fieldGroup.setFieldFactory(new JodaTimeFieldGroupFieldFactory());
+addComponent(fieldGroup.buildAndBind("dateTime"));
 ```
 
 For a more comprehensive example, see [joda-time-fields-demo/src/main/java/com/prodyna/demo/DemoUI.java](../blob/master/joda-time-fields-demo/src/main/java/com/prodyna/demo/DemoUI.java)

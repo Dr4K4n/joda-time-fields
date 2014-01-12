@@ -3,8 +3,8 @@ package com.prodyna.vaadin.demo;
 import javax.servlet.annotation.WebServlet;
 
 import com.prodyna.vaadin.jodatimefields.DateTimeField;
-import com.prodyna.vaadin.jodatimefields.DefaultFieldGroupJodaTimeFieldFactory;
 import com.prodyna.vaadin.jodatimefields.IntervalField;
+import com.prodyna.vaadin.jodatimefields.JodaTimeFieldGroupFieldFactory;
 import com.prodyna.vaadin.jodatimefields.LocalTimeField;
 import com.vaadin.annotations.Title;
 import com.vaadin.annotations.VaadinServletConfiguration;
@@ -35,13 +35,13 @@ public class DemoUI extends UI {
     @Override
     protected void init(VaadinRequest request) {
 
-        final JodaTimeTestBean demoBean = new JodaTimeTestBean();
-        BeanItem<JodaTimeTestBean> demoBeanItem = new BeanItem<JodaTimeTestBean>(demoBean);
+        final JodaTimeDemoBean demoBean = new JodaTimeDemoBean();
+        BeanItem<JodaTimeDemoBean> demoBeanItem = new BeanItem<JodaTimeDemoBean>(demoBean);
 
         final FieldGroup fieldGroup = new FieldGroup(demoBeanItem);
 
         // We need to set the FieldFactory so that Joda-Time classes are recognized
-        fieldGroup.setFieldFactory(new DefaultFieldGroupJodaTimeFieldFactory());
+        fieldGroup.setFieldFactory(new JodaTimeFieldGroupFieldFactory());
 
         // Initialize our new UI component
         final DateTimeField dateTimeField = (DateTimeField) fieldGroup.buildAndBind("dateTime");

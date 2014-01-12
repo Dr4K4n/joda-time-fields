@@ -6,7 +6,7 @@
 	<artifactId>joda-time-fields</artifactId>
 	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>DateTimeField Add-on</name>
+	<name>joda-time-fields Add-on</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,7 +36,7 @@
 
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/Dr4K4n/DateTimeField/issues</url>
+		<url>https://github.com/Dr4K4n/joda-time-fields/issues</url>
 	</issueManagement>
 
 	<licenses>
@@ -182,7 +182,7 @@
 						<goals>
 							<goal>single</goal>
 						</goals>
-						<phase>install</phase>
+						<phase>package</phase>
 					</execution>
 				</executions>
 			</plugin>

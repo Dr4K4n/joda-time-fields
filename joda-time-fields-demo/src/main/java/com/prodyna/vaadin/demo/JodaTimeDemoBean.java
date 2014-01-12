@@ -4,7 +4,7 @@ import org.joda.time.DateTime;
 import org.joda.time.Interval;
 import org.joda.time.LocalTime;
 
-public class JodaTimeTestBean {
+public class JodaTimeDemoBean {
     private DateTime dateTime = new DateTime();
     private Interval interval = new Interval(new DateTime(), new DateTime().plusDays(66));
     private LocalTime localTime = new LocalTime();
