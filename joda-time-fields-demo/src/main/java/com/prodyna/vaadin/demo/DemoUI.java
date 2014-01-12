@@ -20,7 +20,7 @@ import com.vaadin.ui.Notification;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
-@Title("DateTimeField Add-on Demo")
+@Title("joda-time-fields Add-on Demo")
 @SuppressWarnings("serial")
 public class DemoUI extends UI {
 
