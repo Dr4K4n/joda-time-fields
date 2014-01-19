@@ -84,6 +84,4 @@ fieldGroup.setFieldFactory(new JodaTimeFieldGroupFieldFactory());
 addComponent(fieldGroup.buildAndBind("dateTime"));
 ```
 
-For a more comprehensive example, see [joda-time-fields-demo/src/main/java/com/prodyna/demo/DemoUI.java](../blob/master/joda-time-fields-demo/src/main/java/com/prodyna/demo/DemoUI.java)
-
-
+For a more comprehensive example, see [joda-time-fields-demo/src/main/java/com/prodyna/vaadin/demo/DemoUI.java](../../blob/master/joda-time-fields-demo/src/main/java/com/prodyna/vaadin/demo/DemoUI.java)
